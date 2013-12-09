@@ -1,0 +1,11 @@
+---Developpers
+    * Translate code & documentation
+    * Make suns appear at random in the field (seems broken)
+    * Correct the colorization (it's a little sketchy)
+    * Menu (Save/Load game)
+    * Start screen
+
+---Non-developpers
+    * Sound effects
+    * More coherent sprites
+    * Write a better README.md
