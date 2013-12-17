@@ -4,6 +4,8 @@
     * Correct the colorization (it's a little sketchy)
     * Menu (Save/Load game)
     * Start screen
+    * Pause/unpause game
+    * Use a library to play ogg vorbis instead of wav (or use directly midi files for background music)
 
 ---Non-developpers
     * Sound effects
