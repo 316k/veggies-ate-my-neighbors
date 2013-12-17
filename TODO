@@ -1,13 +1,23 @@
 ---Developpers
-    * Translate code & documentation
-    * Make suns appear at random in the field (seems broken)
-    * Correct the colorization (it's a little sketchy)
-    * Menu (Save/Load game)
-    * Start screen
+ ==Controllers
     * Pause/unpause game
     * Use a library to play ogg vorbis instead of wav (or use directly midi files for background music)
 
+ ==Model
+    * Some veggies seem to die without ever appearing
+    * Menu
+
+ ==View
+    * Correct the colorization (it's a little sketchy)
+    * Implements an internalization system
+    
+ ==Misc
+    * Translate code & documentation
+    * Start screen
+    * .deb, .rpm, ... archives for Linuxians :)
+
 ---Non-developpers
+    * Design a menu (New game, Save/Load game, ...)
     * Sound effects
-    * More coherent sprites
+    * More coherent (and prettier) sprites
     * Write a better README.md
