@@ -6,8 +6,6 @@ import ca.qc.bdeb.inf203.model.combatants.AtomicRose;
 import ca.qc.bdeb.inf203.model.combatants.BodySnatcher;
 import ca.qc.bdeb.inf203.model.combatants.ExplosionNucleaire;
 import ca.qc.bdeb.inf203.model.combatants.Projectile;
-import ca.qc.bdeb.inf203.model.combatants.Swastika;
-import ca.qc.bdeb.inf203.model.combatants.Veggie;
 import ca.qc.bdeb.inf203.model.powerups.PlanteUnlock;
 import ca.qc.bdeb.inf203.model.powerups.Soleil;
 import java.awt.Dimension;
@@ -45,7 +43,7 @@ public class Terrain {
     /**
      * Delais entre la création de soleils en secondes.
      */
-    private long delaisSoleil = 30; // 30
+    private long delaisSoleil = 20;
     private long dernierTimestampSoleil;
     /**
      * Liste de plantes à débloquer au fil des niveaux.
@@ -74,7 +72,7 @@ public class Terrain {
      */
     public TerrainEvent tic() {
         synchronized (VeggiesAteMyNeighbors.ticVerrou) {
-            TerrainEvent evenement = TerrainEvent.NULL;
+            TerrainEvent evenement;
 
             combattantsAction();
             evenement = ajouterVeggie();
@@ -224,8 +222,6 @@ public class Terrain {
             this.powerUps.add(new Soleil(25, new Point(x, -TAILLE_CASE_Y), new Point(x, y)));
             dernierTimestampSoleil = ts;
         }
-
-        this.dernierTimestampSoleil = ts;
     }
     /**
      * Gère une action de l'utilisateur selon l'endroit.
